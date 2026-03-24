@@ -1,128 +1,1213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Team-Project-GoIT/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/Team-Project-GoIT/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Team-Project-GoIT/assets/styles-DvPDDfy5.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Organic Shop</title>
+    <link rel="stylesheet" crossorigin href="/Team-Project-GoIT/assets/index-DCc8UYhe.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/Team-Project-GoIT/assets/sprite-E8vg0sBb.svg#logo"></use>
+    <div class="header-wrapper">
+      <a href="#" class="header-logo">
+        <svg class="header-logo-icon" width="142" height="60">
+          <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#logo"></use>
         </svg>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <button class="header-burger-btn" type="button">
+        <svg class="header-burger-icon" width="32" height="32">
+          <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#menu"></use>
+        </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#">Home</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#mission">Mission</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#assortment">Assortment</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#assortment" class="header-order-link">Order</a>
+    </div>
+  </div>
+
+  <!-- Mob/Tab Menu -->
+  <div class="menu-overlay">
+    <div class="mobile-tab-menu">
+      <div class="top-menu-content">
+        <a href="#" class="menu-header-logo">
+          <svg class="header-logo-icon" width="142" height="60">
+            <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="menu-close-btn" type="button">
+          <svg class="menu-close-icon" width="32" height="32">
+            <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu-nav">
+        <ul class="menu-nav-list">
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#">Home</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#mission">Mission</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#assortment">Assortment</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#feedbacks">Feedbacks</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#assortment" class="menu-order-link">Order</a>
+    </div>
   </div>
 </header>
 
 
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/Team-Project-GoIT/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+      <!-- Hero Section -->
+      <section class="hero-section">
+  <div class="container hero-container">
+    <h1 class="hero-title">Organic Shop – Naturally better.</h1>
+    <p class="hero-text">
+      Your source for fresh, healthy, and responsibly grown food. Discover the
+      taste of nature with our carefully selected organic products.
+    </p>
+    <a class="hero-link" href="#contacts">Get in touch</a>
   </div>
 </section>
 
-      <article class="badges">
+      <!-- Mission Section -->
+      <section class="mission" id="mission">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <div class="mission-text">
+      <h2 class="mission-title">
+        Our Mission: Fresh, Local, and Organic for a Healthier Tomorrow.
+      </h2>
+
+      <p class="mission-txt">
+        At Organic Shop, we believe in the power of nature. Our mission is to
+        provide you with fresh, locally sourced organic products that nourish
+        both body and soul. We partner with ethical farmers who share our
+        commitment to sustainability and quality.
+      </p>
+    </div>
+
+    <img
+      class="mission-img"
+      src="/Team-Project-GoIT/assets/mission-CLFy5XeU.jpg"
+      alt="mission"
+      srcset="/Team-Project-GoIT/assets/mission-CLFy5XeU.jpg 1x, /Team-Project-GoIT/assets/mission@2x-CnGxvE53.jpg 2x"
+    />
+  </div>
+</section>
+
+      <!-- Benefits Section -->
+      <section class="benefits" id="benefits">
+  <div class="container benefits-pre">
+    <div class="picture-benefit">
+      <picture class="img-benefits">
+        <!-- DESKTOP -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="/Team-Project-GoIT/assets/benefits-desktop-CUqmpTai.jpg 1x, /Team-Project-GoIT/assets/benefits-desktop@2x-D_78hP9A.jpg 2x"
+        />
+
+        <!-- TABLET -->
+        <source
+          media="(min-width: 768px)"
+          srcset="/Team-Project-GoIT/assets/benefits-tablet-BwaZPgW_.jpg 1x, /Team-Project-GoIT/assets/benefits-tablet@2x-BA6v5s-5.jpg 2x"
+        />
+
+        <!-- MOBILE -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/Team-Project-GoIT/assets/benefits-mobile-Cg4lWQ1a.jpg 1x, /Team-Project-GoIT/assets/benefits-mobile@2x-DmqPyLdI.jpg 2x"
+        />
+
+        <img src="/Team-Project-GoIT/assets/benefits-mobile-Cg4lWQ1a.jpg" alt="Organic food" />
+      </picture>
+    </div>
+
+    <div class="benefits-right">
+      <h2 class="zaglav">Why Choose Organic?</h2>
+      <p class="text-for-zaglav">
+        Organic products offer a healthier choice for you and your family. With
+        no synthetic pesticides or GMOs, you can enjoy better nutrition and
+        natural flavors while supporting sustainable farming practices.
+      </p>
+
+      <ul class="list-for-benefits">
+        <li class="li-benefit">
+          <div class="person-con-div">
+            <svg class="icon-svg-ben" width="48" height="48">
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#health"></use>
+            </svg>
+          </div>
+          <h3 class="min-zaglav">Better for Your Health</h3>
+          <p class="par-for">
+            Organic foods are grown without synthetic chemicals, making them
+            safer for your body. They're rich in antioxidants and nutrients that
+            support your immune system and long-term well-being.
+          </p>
+        </li>
+
+        <li>
+          <div class="person-con-div">
+            <svg class="icon-svg-ben" width="48" height="48">
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#basketball"></use>
+            </svg>
+          </div>
+          <h3 class="min-zaglav">Protecting the Planet</h3>
+          <p class="par-for">
+            Organic farming reduces pollution, conserves water, and improves
+            soil health. By choosing organic, you're helping build a cleaner,
+            more sustainable environment for future generations.
+          </p>
+        </li>
+
+        <li>
+          <div class="person-con-div">
+            <svg class="icon-svg-ben" width="48" height="48">
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#restaurant"></use>
+            </svg>
+          </div>
+          <h3 class="min-zaglav">Fruits & Vegetables</h3>
+          <p class="par-for">
+            Freshly picked organic produce delivered straight from local farms
+            to your table.
+          </p>
+        </li>
+
+        <li>
+          <div class="person-con-div">
+            <svg class="icon-svg-ben" width="48" height="48">
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#cheese"></use>
+            </svg>
+          </div>
+          <h3 class="min-zaglav">Dairy Products</h3>
+          <p class="par-for">
+            Creamy, organic dairy options that are both delicious and ethically
+            sourced.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Assorts Section -->
+      <section class="assorts" id="assortment">
+  <div class="container">
+    <p class="assorts-subtitle">Assortment</p>
+    <h2 class="assorts-tittle">Explore Our Delicious Organic Product Range</h2>
+    <ul class="assorts-list">
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/apples-BSnA-7Rc.jpg"
+          alt="Foto Organic Gala Apples"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/apples-BSnA-7Rc.jpg 1x, /Team-Project-GoIT/assets/apples2x-D_Ox7pwy.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Organic Gala Apples</h3>
+              <p class="assorts-text">
+                Juicy, crisp, and sweet apples grown without pesticides.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;3.50</p>
+              <p class="assorts-amount">per 1 pound</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/spinach-CwU2GULW.jpg"
+          alt="Foto Fresh Organic Spinach"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/spinach-CwU2GULW.jpg 1x, /Team-Project-GoIT/assets/spinach2x-D45Jufe3.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Fresh Organic Spinach</h3>
+              <p class="assorts-text">
+                Young spinach leaves hand-picked from a local organic farm.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;2.80</p>
+              <p class="assorts-amount">per bunch</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/egg-cJpnxtRA.jpg"
+          alt="Foto Free-Range Organic Eggs"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/egg-cJpnxtRA.jpg 1x, /Team-Project-GoIT/assets/egg2x-CHWOxt4b.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Free-Range Organic Eggs</h3>
+              <p class="assorts-text">
+                Eggs from free-range hens fed with natural feed.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;5.00</p>
+              <p class="assorts-amount">per dozen</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
+      </li>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/milk-DQ8CtUM_.jpg"
+          alt="Foto Organic Almond Milk"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/milk-DQ8CtUM_.jpg 1x, /Team-Project-GoIT/assets/milk2x-CqaqqSib.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Organic Almond Milk</h3>
+              <p class="assorts-text">
+                Natural plant-based milk with no added sugar — perfect for
+                coffee and breakfast.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;4.20</p>
+              <p class="assorts-amount">per 1 liter</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
+      </li>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/honey-jRxcOxbv.jpg"
+          alt="Foto Raw Organic Honey"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/honey-jRxcOxbv.jpg 1x, /Team-Project-GoIT/assets/honey2x-Dp3K-9oL.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Raw Organic Honey</h3>
+              <p class="assorts-text">
+                Unfiltered honey straight from the apiary — natural, sweet, and
+                healthy.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;7.50</p>
+              <p class="assorts-amount">per 500 ml jar</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
+      </li>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/carrots-BPDKA2Hx.jpg"
+          alt="Foto Organic Carrots"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/carrots-BPDKA2Hx.jpg 1x, /Team-Project-GoIT/assets/carrots2x-E4F-lpf2.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Organic Carrots</h3>
+              <p class="assorts-text">
+                Crunchy and sweet carrots grown without chemicals.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;1.90</p>
+              <p class="assorts-amount">per 1 pound</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
+      </li>
+      <li class="assorts-item">
+        <img
+          src="/Team-Project-GoIT/assets/bread-D14D46xH.jpg"
+          alt="Foto Wholegrain Organic Bread"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/bread-D14D46xH.jpg 1x, /Team-Project-GoIT/assets/bread2x-B-PM8gdG.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Wholegrain Organic Bread</h3>
+              <p class="assorts-text">
+                Homemade sourdough bread made with organic wholegrain flour.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;4.80</p>
+              <p class="assorts-amount">per loaf</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
+      </li>
+      <li class="assorts-item">
+        <img
+          src="../img/tea.jpg"
+          alt="Foto Organic Herbal Tea Mix"
+          class="assorts-img"
+          srcset="/Team-Project-GoIT/assets/tea-BTOMgSoy.jpg 1x, /Team-Project-GoIT/assets/tea2x-D9uvqOzO.jpg 2x"
+          width="343"
+          height="365"
+        />
+        <div class="assorts-cart">
+          <div class="assorts-info">
+            <div class="assorts-des">
+              <h3 class="assorts-name">Organic Herbal Tea Mix</h3>
+              <p class="assorts-text">
+                Fragrant blend of mint, chamomile, and thyme — perfect for
+                relaxation.
+              </p>
+            </div>
+            <div class="assorts-cost">
+              <p class="assorts-price">&#36;6.30</p>
+              <p class="assorts-amount">per 100g</p>
+            </div>
+          </div>
+          <button class="assorts-button" type="button">Add to cart</button>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <!-- Feedbacks Section -->
+      <section class="feedbacks" id="feedbacks">
+  <div class="container">
+    <h2 class="feedbacks-title">What Our Customers Say</h2>
+    <p class="feedbacks-desc">
+      We’re proud to grow a community that values health, sustainability, and
+      real flavor. Read what our happy customers have to say about their
+      experience with our organic products.
+    </p>
+    <ul class="feedbacks-list">
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "Their eco-friendly packaging is a big plus for me. Highly
+            recommend!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Tony Lee profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wgARCAAwADADAREAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAABwgEBgIDCQX/xAAaAQADAQADAAAAAAAAAAAAAAADBAUCAAEG/9oADAMBAAIQAxAAAADqT12p0xxLkjwjDfgvGZqoKpMdA8yiijyjoQ/SBmt53pQ4FPU2CdzScUkiBKs3HAGNZXmXIZOOIDJOZTqhYfm1NNq715eswZ+NigB/TQsXwyZpaUWvBK6FuKyjd5llk6cb/8QAIRAAAgMBAQACAwEBAAAAAAAABAUCAwYHAQgRABITFCP/2gAIAQEAARIAZtFyVfe2bG0iBiw9suv3fyq1exPYrOVzVAZwCP3c76F8rhhPL0pzPQuz5lTGkVzz5mjZ4uVE2mlj9gR/arhvymr0KaNjg+bgOq2we8kA8JoFSwXE1kDXw8nXb8puh36fRz4/QmbyWQhT5awzKMQgE21RaavSWU1C1/gHNtHuu7us1UHGqKGk4pnSJz7jukyKNA/wrVDqy1IjJdP4LbVxe3szULqqP38hRfX8ddheGfdkLz5kLS522hetQLNA71JbFLnfb9URayOioWPCF12iSYpce9CFrGsl2bFLcp3WlvtiRVef3gECavwDYbTve/A5tid2e6y6VrW0jqeW88pG6z07rbeAqpOe9PkBasuagwValIntcfzPhMa7nuH9TV/Z9V0iQXV4ftsI1GQFo8l59F0yn5+fI/lIh/PitFBOKxuyoJbSAue5cfzNUgg7XKLS2VDBcWJ0ZXXYmXM039ojW0e1wozKhxc1HWNnTA0ov/jTP5SaIzlOJadFXBeF/VXtVVOUIkalQsaGIpcJAi0e3aYiF1Vaef3/AFNpkNZ+dm39yYFaBAK+4wBkG2Im925YOcmnvgHeFb+n+H3hGMAPYe7OC2mscXz+NXrxEn0yYzPv11B64+qVBI3UuKdLwtop/BEag0CI1YZFSfa7UbR0pHWetleaTD/J70fnrTVz0o6lG3Z3aYc2jy3h/E+gtsYpJ67Vbn2lEIxvGEFoCGqEGh+lVMfIQj//xAAtEAACAgIABQIFAwUAAAAAAAABAgMRBBIABRMhMSIyFCNBQlIVUWEWU4GSof/aAAgBAQATPwCZwqIo+pJ4XnGMcue4gVjjQrJ0XeVjEAy36HcMKCNn88ndTOrCUdMqm1DsvcaFS1Ko8YnNMgTYyROJB7wCJQgYPTadP3cF0OTivGzdQS0iIQgX1fVWtbLdihtWU8Q4Ilx4893HSZ7PzEjF2gFiy3lU4/pkvKJGxpRHIUAcl1bqOy0FJk00osDku0SQRIdZlmdnGnalkpvyQXehxsGIMMjLxyqBZgp65LMXZWVUC95Ch7cTYqzmaFGLEyLR+Z6SrXTIPUAzMaPLWxkjnNSsqfaVZZL7E+r8bovzPmI6Jad3kdWQlaoq1IPucWAV2jkyFibHaKMbrNISsr9MWoLFj4Kimr47JhgdseVFEeTOjqzSOFlkKbojFo/WjG0ysKkjmxWJldJHlc5EUSTO3gBjHiQte/UaaQ4AEczh45BSkl3q9gncsSOP1ZCr8tjKtFlWdRswRSYxdHax3bjMWJpV6c8kdhlRQTbj1921StjTFz38qrir/gk/54eDqfF4jRMcjEEdHdnVFaMf3Y4V8SMw5dEEx0sxTw48NBajSKDJQkUJdDKAm6ouNFEPiVLxGNmD0t07sB+zGh2HEvLMRTjlzFUayRCgVVHU0dWDtVUvDbBFy29hkKq1REi2PYg+DbcQyCRBJ0lVhspIBPf/AKTwsQYJG17Br7C+mwHa74RQ4x8YZKYjtKfsDrmOAeJ4pqiyOpZ3aG3oxGbXwLOt+0F0yNxkqurhOvVRrb1qq3Y4mXZJUPkEcZZMuXixJoqmGJmSOWlUm3YnwNG4bkWXgpiI2tjJmkURs4j6jarqw09nlRhS69KOLGCxRMtjZWd0YD8o2bjFyI5J31P1cbKqt/tqaIU+LJ7D9ye5P8nj/8QALhEAAQMDAgMHAwUAAAAAAAAAAQIDEQAEIRIxIkFREBNhcZGxwQUjoRRCQ3Lx/9oACAECAQE/ACoJEmnL4r4WvbNQ48SR+fTrXc3CE6kxvyq2v1fy/wCUCFCRV85r+2OVIkrMEijcJtrPWrcmPH2+KtWQwtau8VPKTgjcHJPxiYNX7RZuErR+7erFxST3atqedElROKZs1Oq1pTv6UbRxlkJgFQMxvjPX42pVr3XG4mMQEzOPHp5TS9T7gSThA8s0hshYUkZ8+XWra1DCZOTRzV9brum+AwpOxq9t/wBKhtR4oVxeM8/xV4iQFJptCtUKmfIe9ByBBo9KmDFfVUa7RSuYz6GmH0vW+eUUw2AdQ27Lh11KPtJk0zcOKVBBJ/qRHWc0+nUhKT41ZWS7cnUcZjy7P//EADARAAEDAwIDBgQHAAAAAAAAAAECAxEABCExQRIiUQUTFEJhkXGBocEQIzJisfDx/9oACAEDAQE/AACowKTbd2OJwYqUNikLZKuFVPWoOW/ppRBGDVo356cSAgJWAfnpTNqq5uu7bjGc6R7j03q4V4hCG1Njh3xkEYIBx99pqzWFslK/LnpV4Eq5gIPxnFWzZPLBn0inbtLSO6UvlnTeQdOtM3rL9wpRJCSIn9OflP113I1HjC8e7bVxAZ4oAz6dc7kToDQIaBUnVR2zii6OBTSzA35fNnFP3BuFmBA6UmBXZ76LN0lQlJ1H3rs+58W44gcsjl9I/wBq0XwEpWPece1LWgo5QI6Sc67H3paDBUNBmhpUSK7IcLd4hB0Jj5EGri0LVwSJEzpH39afdKhwqJmfSPpRAODVqwwpz85UD+75/in7NhKCoKgD9wM9IEDerQhC1qEbAY3OpHSIBq+7RbuGwlIydfj+H//Z 1x, /Team-Project-GoIT/assets/avatar-image@2x-LPkdKlpz.jpg 2x"
+          />
+          <p class="profile-name">Tony Lee</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "I absolutely love the variety of organic produce available here.
+            Everything is fresh and bursting with flavor!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Emily Johnson profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-1-sh8X0vwR.jpg 2x"
+          />
+          <p class="profile-name">Emily Johnson</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "The staff is incredibly knowledgeable and always willing to help me
+            find what I need. Great service!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Michael Smith profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-2-D2XS1nY8.jpg 2x"
+          />
+          <p class="profile-name">Michael Smith</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "I've noticed a significant improvement in my health since switching
+            to their organic products. Highly recommend!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Sarah Davis profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-3-DpabpKfk.jpg 2x"
+          />
+          <p class="profile-name">Sarah Davis</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "The range of organic snacks is fantastic! Perfect for my kids, who
+            love them and I feel good about giving them healthy options."
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="David Brown profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-4-DlbmHpPR.jpg 2x"
+          />
+          <p class="profile-name">David Brown</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "I appreciate that they source local ingredients. It makes me feel
+            connected to the community!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Jessica Wilson profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-5-D3UUXb9L.jpg 2x"
+          />
+          <p class="profile-name">Jessica Wilson</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "The prices are fair for the quality of food. I never feel guilty
+            about spending a little more here."
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Andrew Lee profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,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 1x, /Team-Project-GoIT/assets/avatar-image@2x-6-DSTRFLdW.jpg 2x"
+          />
+          <p class="profile-name">Andrew Lee</p>
+        </div>
+      </li>
+      <li class="feedbacks-list-item">
+        <div class="feedbacks-item-top">
+          <div class="feedbacks-rating">
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-full"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+            <svg class="feedbacks-stars" height="19" width="20">
+              <use
+                class="feedback-stars-icon"
+                href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#star-empty"
+              ></use>
+            </svg>
+          </div>
+          <p class="feedbacks-text">
+            "Their eco-friendly packaging is a big plus for me. It's nice to
+            support a business that cares about the environment!"
+          </p>
+        </div>
+        <div class="feedbacks-item-bottom">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Laura Kim profile picture"
+            class="profile-pic"
+            srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wgARCAAwADADAREAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAACAkCBgcFA//EABsBAAEFAQEAAAAAAAAAAAAAAAQCAwUGBwEI/9oADAMBAAIQAxAAAAB/KerwYfS+44Mkgw3yMPeAoUXs8tUQ3EFaFBiNKjdtgl52fbbKs0G1MyCnNDCFq30njLQaWRer/DV/IpbV08E5YjLZeMspzGn5L6cZ1oPmMZFc1S11XMpEESY2eYtBzrmQh1MHDhRaqxWulFJUrW8EDn//xAAjEAABBQEBAQABBQEAAAAAAAAGAgMEBQcIAQkKEhMUFRYy/9oACAEBAAESAHn2IrKn5DyUIT/0rSehPrJ9CdEJcm4qCk86ZcP3cqju9h+neA76BbNpqNG7NKtVpQw+ZF2L/KuhN6wW2TdYpt5WIS2Xf1oe+cn5HvQmWlY3lv0UW0Ui9/DkuRzsTKxo6GoRgH3keyq7GOl+DO6k6yvZGyysTy2MFmECkYS0Vi0fouMO4JdMCWk0OdErN8lEDzrgb0LuLs7TvcwMEVmP1R3f2FHdaSAWGalcgYnzkSVMrV4l8I0EqICUVqrS8cWuplexoD/xZ73nZ72CW8TaIUeLGyiyZWFIL4D5mZmJNp+6cnSrWOTSfbmB1iLxKLnErxWTqIRXlt0E2ljmjePmUAPx0IXMLhyfCZrLlNtQbkbT9E1a2LbNpKHZC220pCInk8yqYDraVpftYzbiJxtA5y6aq9QCqyLUOiOg0lkx4e5F2Jc9c66PaFvNuNSJxHJpjeXzKXieW8xVnLhMZPmYnWMzoNNHNOOz/nMrfj7EJSva4ip7X/Nx7Lm/QyyREQCDynYi5rkVhInxZt4gU1hJJq4S/wCNIbkMNPhpP0B1FAyBMWMueV6NW06EffLjErAdJZ6yy4V9eGi1xtg3RwAVGsXaHLJUyFUvMUrvjcjtwDAzYXfPbUusV2dNXOoHWI+aYrz65JQG5Ohma2tSZt10h05LlkioI3PchoeUnxEb8cjjwp33Rkd1bAIMf0IStyKAWmgZ8E6sE2mb6OMQ7qiuoa4tpV758Hdr5bOiTVuCbqUQj9qxHVEEtb2bpzBr+vodYCSKs9jkX7vrUiCV9CT3EYTg5SVkEl5KUTOAPxmNj1AwpNk7utFBo9DlMz0BQKCh2ZCFeAZ8Nw6elqYyY9dW/wD/xAAxEAADAAICAAQEBAQHAAAAAAABAgMEEQUSABMhIgYjMUEHFTKRFBZCUlFTYWNyg/D/2gAIAQEAEz8AdtAePxH4bzuf5LJx3KX/ACrjO3rP7LZ2RHHvTJVw0h8UZ93vymd+VxzMrU3vRJjHtV8Uopb1kf7W18N/EGThNvf38l12PEMBZcpxplPuPMljJ0zZs2pjSI4Lhi7+MSgadpn6EH/xB9D4HxDFeZPJCmLec1izewThVbbbqS5mNgOGH4xedCONFITZ1pRzrJURhYo83ZVRB2b5beHycvI4fIu+V3zsrHZgXzsvIych6n7zSwmOkkRPCyZO2mI9Vb1U+nqPtvxUjumPXonk9tb6ALoA70Gb7HXi77GBywwVpXHU/wBKXSTnr/moNDdW38TfiPltbhuSbKxY1xMmnd3kFrKklY4yFDiIjhCnr/PhefK418Bp3y+LpmSSdDirvIeUKFgslIXVVZ5/EGR59d5uVLFxsiLKiugSc6oV6MHq1i/ajoVu1AJzQTmAzEkqqIqLsk9UGyfqXXasrVUMpH3BBII/wPjjsWcVQYsRTp1UAdf1e36e9vHGsMCXNDEv/DI+Xj4wjHLPWIdqshLv80uzsXPNcThEYuNmXatUxS0aXnR6OWVhUdSECrpU8cphhc5TiXk6i0d/KoMd969G6OraHvRNHu9gieZQgjYU+WSNnepMdBQC2TOzh7KwKoyR9+g3U72NnQ1rZ8cdSjqXusonQZQVADg+v+u/GAih48mi9JVp/tWRV/7Ebt61XefTFFYq9Zd2huiFKFFaffsukpT1O+pw+aLQpmv+mAnNvJL2qsULNt9aK6A0UfHwzk5JHzXNsmpyGZt6JILnf743NVzJ0Yt/c2LLsf8AixU/bfhn0+fyJSkauhQ/Mhjzo66cFFq69PdJ9Z8Q8cmLDRVgf3B+oOiCCPD8kuPynF0nlJUItK/KzYpouvf5g0q9aHbt8T8NnRtO6JZ5WomRLVirKtlbfteciNge34b4nMzLVqF8p6Mcft3czZ+zv9FL7Pjjcxa8xnsjB0S9V2mIh0pbTPb6pqR94wIicoTH2UD9yfqSSTsnx//EACERAAIDAAICAgMAAAAAAAAAAAMEAQIFABEGEhMUBxAV/9oACAECAQEIALWrSvdquq2H71E9S7EA51E8CwMsk6XYA2Cpg+XeQGA39Oubsi/mkoOTxlJ1LxNv7gffjIBAXOSv4/dvXJAtY/i+k22UlsLB1Vdb2JtNvy7ao0IP9aLGcvI0i354ow2WgCl+BYQq1h5QBXJPOxDQM0ZuYybzWdDU6WKe2afrAzJSoJexCwMczOT8N2ZtSiaugCQM3Wv6diO1K/dZ0KqkNBf0gxAST3Q4vj6GR8QRzMOlGyGwpGOgqRSn/8QALBEBAAIBAwMCBAYDAAAAAAAAAQIRIQASMQNRYUFxEBOBsSJCQ1KRoZLB0f/aAAgBAgEJPwBxp3f6eycj3HjUc1f918HEOf7/AOakSjIsThNQuBW7cYl64fCFMbzuOTXVj0upvK+buSmMStyO7hI+pgfPSl1Ot1GqjyvNWhQGePNZ1FinI8joq4yX3CWdcMZJ/m/e9dScWc5ZXCMljUNl5i25Qqdpi5kodKUZNSdqfmAI7cMaXddiBi3fcNpB2jAEJTYvdV3ZkOI+hUmU5Wq8q8rpqoyb7UKP01Nk7ZNqv6nl8GoXXF5rN4W0zqNy57g+Djkt7udfguYc8iZ9hUoctPumJuPY4+7p3GyWI5k2JUT9zxHnKajKMoxpjOJGRc7pPR0150bqOz6oXqBKC5HhzizXToeAAK9P44PQ1jvnH2NQPmd/GcY+DQ6Rv+eHUqff6fbGs7hH64c6KDBr/8QAIhEAAgMAAgIBBQAAAAAAAAAAAwQBAgUABhETFAcSISMx/9oACAEDAQEIAKxNp8R6L1nxNAWkHtn8cOhaJHA3Um85u6rXX8cRVvk3eyTQ5W9kUb6hbDnQQtnH9c5ZiH0VaT9auvgM0fWCPsmSuAdYf3ce+RaI62jnFy4g+v8AHh+wwY4oNrrDt3rPzaZrAA++8RMcVOeovHOukUb0yC5utoKaVlq9e2FK7at+ds3YcSM5RYXtJ45sRca1azR1zOagyomPvt+1NH2zEwvovhQsnWJmP4/WWRV8WWNN5sVREt58XTZKg2NgLLB22LnN/8QAKBEBAAIBBAEDAwUBAAAAAAAAAQIRIQADEjFxIkFhEFGhEzKBkeHB/9oACAEDAQk/ANGfx/uvHmvf6FynQHyoHfnUGG5BqUXsTUqk9U5ideM301itbUtzbYtu2F2LmjrsW+81rcNvbgWrdBf2LuTfV6kSHInSabTcgHjnHGv3wnCEg94sO35in9OojGMI2UWIer1cqwnwojWttJ7oxPScoyH0rLlyyODjXVv24cZ8uZyqTSkbPcAx+1LZDluPGEaIlrg0WS3NsR6RmCPwljrZhDlIHjEj1tSAwHVtfbUmnNHV1V+a00fxb5e9BMIN4sG/ygPgTwNcAvz7/wDPFmpEK3YNzxCNSHlN9oRq5vtEc6nCW0zuM9ufOMw28sWgS8CKOfo1yfwD/mpsJmbO6pusYx/GtzPvarei16xm/il1uv6S2x9r+5fTjNVfv9DIv9JToTHxWENFnzpqW3KMo/DFEx5NSZTkqr2rldf/2Q== 1x, /Team-Project-GoIT/assets/avatar-image@2x-7-BBtMDYNf.jpg 2x"
+          />
+          <p class="profile-name">Laura Kim</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- FAQ Section -->
+      <section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-title-wrapper">
+      <h2 class="faq-title">FAQs</h2>
+      <p class="faq-desc">
+        Here are some common questions about our organic products and services.
+      </p>
+    </div>
+    <ul class="faq-list">
+      <li class="faq-item">
+        <div class="faq-question-wrapper">
+          <p class="faq-question">Are all products organic?</p>
+          <button type="button" class="faq-answer-open">
+            <svg
+              class="faq-chevron-up"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#chevron-up"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-answer">
+          Yes, all our products are certified organic. We prioritize quality and
+          sustainability in our sourcing. You can trust that everything you buy
+          from us meets strict organic standards.
+        </p>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question-wrapper">
+          <p class="faq-question">Where do you source?</p>
+          <button type="button" class="faq-answer-open">
+            <svg
+              class="faq-chevron-up"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#chevron-up"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-answer">
+          We source our products from local farmers and trusted suppliers. This
+          ensures freshness and supports our community. Our commitment is to
+          ethical and sustainable practices.
+        </p>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question-wrapper">
+          <p class="faq-question">What areas do you deliver?</p>
+          <button type="button" class="faq-answer-open">
+            <svg
+              class="faq-chevron-up"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#chevron-up"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-answer">
+          We currently deliver to several neighborhoods in the region. Check our
+          delivery area on the website for specifics. If you're unsure, feel
+          free to reach out!
+        </p>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question-wrapper">
+          <p class="faq-question">Do you offer subscriptions?</p>
+          <button type="button" class="faq-answer-open">
+            <svg
+              class="faq-chevron-up"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#chevron-up"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-answer">
+          Yes, we offer subscription plans for regular deliveries. This is a
+          convenient way to ensure you never run out of your favorite organic
+          products. You can customize your subscription based on your needs.
+        </p>
+      </li>
+      <li class="faq-item">
+        <div class="faq-question-wrapper">
+          <p class="faq-question">How can I contact?</p>
+          <button type="button" class="faq-answer-open">
+            <svg
+              class="faq-chevron-up"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#chevron-up"></use>
+            </svg>
+          </button>
+        </div>
+        <p class="faq-answer">
+          You can reach us via phone or email for any inquiries. Our customer
+          service team is here to help. We aim to respond to all questions
+          promptly.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- Contacts Section -->
+      <section class="contacts" id="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-container-left">
+      <div class="container-contacts-title-text">
+        <p class="contacts-under-title">Contacts</p>
+        <h2 class="contacts-title">Get in Touch</h2>
+        <p class="contacts-text">We'd love to hear from you anytime!</p>
+      </div>
+      <address class="contacts-address">
+        <ul class="contacts-address-list">
+          <li class="contacts-mail-item">
+            <svg
+              class="contacts-icon"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#mailbox"></use>
+            </svg>
+            <a href="mailto:hello@organicstore.com" class="contacts-mail-link"
+              >hello@organicstore.com</a
+            >
+          </li>
+          <li class="contacts-num-item">
+            <svg
+              class="contacts-icon"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#phone"></use>
+            </svg>
+            <a href="tel:+15553291024" class="contacts-num-link"
+              >+1 (555) 329-1024</a
+            >
+          </li>
+        </ul>
+      </address>
+      <!-- feedbackform -->
+      <form class="feedback-form" name="feedback" autocomplete="off">
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userName">Name</label>
+          <div class="feedback-field">
+            <input
+              class="form-input"
+              name="userName"
+              type="text"
+              id="userName"
+              placeholder="Sarah"
+              pattern="^[a-zA-Z\s.]{5,64}$"
+              required
+            />
+            <p class="text-name-valid">Success!</p>
+            <p class="text-name-invalid">Invalid name, try again</p>
+          </div>
+        </div>
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userEmail">Email</label>
+          <div class="feedback-field">
+            <input
+              class="form-input"
+              name="userEmail"
+              type="email"
+              id="userEmail"
+              placeholder="hello@organic.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
+            />
+            <p class="text-valid">Success!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+        </div>
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userComment">Message</label>
+          <textarea
+            class="feedback-message"
+            name="userComment"
+            id="userComment"
+            rows="10"
+            minlength="1"
+            maxlength="500"
+            placeholder="Type your message..."
+            required
+          ></textarea>
+          <p class="message-error">Error Text</p>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contacts-container-right">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/Team-Project-GoIT/assets/contacts-img-desktop@1x-_2zWIKOA.jpg 1x, /Team-Project-GoIT/assets/contacts-img-desktop@2x-7qlKaxtC.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/Team-Project-GoIT/assets/contacts-img-tablet@1x-BhyUnsEU.jpg 1x, /Team-Project-GoIT/assets/contacts-img-tablet@2x-BO1xikP0.jpg 2x"
+        />
+        <img
+          src="/Team-Project-GoIT/assets/contacts-img-mobile@1x-hNb5C9sW.jpg"
+          alt="A small, friendly team of people"
+          class="contacts-image"
+          srcset="/Team-Project-GoIT/assets/contacts-img-mobile@1x-hNb5C9sW.jpg 1x, /Team-Project-GoIT/assets/contacts-img-mobile@1x-hNb5C9sW.jpg 2x"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
 
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+    <div class="footer-links-wrapper">
+      <a href="index.html" class="footer-logo-link">
+        <svg class="footer-logo" width="162" height="70" aria-hidden="true">
+          <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#logo"></use>
+        </svg>
       </a>
-    </p>
+      <nav class="footer-nav">
+        <ul class="footer-link-list">
+          <li class="footer-item">
+            <a href="#" class="footer-link">Home</a>
+          </li>
+          <li class="footer-item">
+            <a href="#mission" class="footer-link">Mission</a>
+          </li>
+          <li class="footer-item">
+            <a href="#benefits" class="footer-link">Benefits</a>
+          </li>
+          <li class="footer-item">
+            <a href="#assortment" class="footer-link">Assortment</a>
+          </li>
+          <li class="footer-item">
+            <a href="#feedbacks" class="footer-link">Feedbacks</a>
+          </li>
+          <li class="footer-item">
+            <a href="#faq" class="footer-link">FAQ</a>
+          </li>
+          <li class="footer-item">
+            <a href="#contacts" class="footer-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a
+            href="https://www.facebook.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            href="https://www.instagram.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://x.com/" class="footer-social-link" target="_blank">
+            <svg
+              class="footer-social-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#x"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            href="https://www.linkedin.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            href="https://www.youtube.com/"
+            class="footer-social-link"
+            target="_blank"
+          >
+            <svg
+              class="footer-social-icon"
+              width="32"
+              height="32"
+              aria-hidden="true"
+            >
+              <use href="/Team-Project-GoIT/assets/icons-Dn2XIRMr.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p class="footer-copyright-text">
+        &copy; 2025 Organic Shop. All rights reserved.
+      </p>
+    </div>
   </div>
 </footer>
-
 
   </body>
 </html>
