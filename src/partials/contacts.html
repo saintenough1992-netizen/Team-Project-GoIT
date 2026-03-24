@@ -1,0 +1,120 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts-container">
+    <div class="contacts-container-left">
+      <div class="container-contacts-title-text">
+        <p class="contacts-under-title">Contacts</p>
+        <h2 class="contacts-title">Get in Touch</h2>
+        <p class="contacts-text">We'd love to hear from you anytime!</p>
+      </div>
+      <address class="contacts-address">
+        <ul class="contacts-address-list">
+          <li class="contacts-mail-item">
+            <svg
+              class="contacts-icon"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            >
+              <use href="/img/icons.svg#mailbox"></use>
+            </svg>
+            <a href="mailto:hello@organicstore.com" class="contacts-mail-link"
+              >hello@organicstore.com</a
+            >
+          </li>
+          <li class="contacts-num-item">
+            <svg
+              class="contacts-icon"
+              width="24"
+              height="24"
+              aria-hidden="true"
+            >
+              <use href="/img/icons.svg#phone"></use>
+            </svg>
+            <a href="tel:+15553291024" class="contacts-num-link"
+              >+1 (555) 329-1024</a
+            >
+          </li>
+        </ul>
+      </address>
+      <!-- feedbackform -->
+      <form class="feedback-form" name="feedback" autocomplete="off">
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userName">Name</label>
+          <div class="feedback-field">
+            <input
+              class="form-input"
+              name="userName"
+              type="text"
+              id="userName"
+              placeholder="Sarah"
+              pattern="^[a-zA-Z\s.]{5,64}$"
+              required
+            />
+            <p class="text-name-valid">Success!</p>
+            <p class="text-name-invalid">Invalid name, try again</p>
+          </div>
+        </div>
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userEmail">Email</label>
+          <div class="feedback-field">
+            <input
+              class="form-input"
+              name="userEmail"
+              type="email"
+              id="userEmail"
+              placeholder="hello@organic.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
+            />
+            <p class="text-valid">Success!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+        </div>
+        <div class="feedback-wrapper">
+          <label class="form-label" for="userComment">Message</label>
+          <textarea
+            class="feedback-message"
+            name="userComment"
+            id="userComment"
+            rows="10"
+            minlength="1"
+            maxlength="500"
+            placeholder="Type your message..."
+            required
+          ></textarea>
+          <p class="message-error">Error Text</p>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contacts-container-right">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/contacts-img-desktop@1x.jpg 1x,
+            /img/contacts-img-desktop@2x.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contacts-img-tablet@1x.jpg 1x,
+            /img/contacts-img-tablet@2x.jpg 2x
+          "
+        />
+        <img
+          src="/img/contacts-img-mobile@1x.jpg"
+          alt="A small, friendly team of people"
+          class="contacts-image"
+          srcset="
+            /img/contacts-img-mobile@1x.jpg 1x,
+            /img/contacts-img-mobile@1x.jpg 2x
+          "
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

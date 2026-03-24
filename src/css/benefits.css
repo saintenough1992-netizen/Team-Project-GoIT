@@ -1,0 +1,126 @@
+.benefits {
+    background-color: #1A5901;
+    padding: 64px 0;
+}
+
+.benefits-right {
+    color: #fff;
+    margin-top: 24px;
+}
+
+.zaglav {
+    font-family: 'Chivo', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.text-for-zaglav {
+    margin-bottom: 32px;
+   
+}
+
+/* ---------- LIST ---------- */
+
+.list-for-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.li-benefit,
+.list-for-benefits li {
+    list-style: none;
+}
+
+.person-con-div {
+    margin-bottom: 16px;
+}
+
+.icon-svg-ben {
+    fill: #fff;
+}
+
+.min-zaglav {
+    font-family: 'Chivo', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.par-for {
+    font-size: 16px;
+}
+
+
+/* TABLET*/
+
+
+@media  (min-width: 768px) {
+
+   
+.text-for-zaglav {
+    max-width: 704px;
+}
+
+.list-for-benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+}
+    
+.list-for-benefits li {
+    width: calc((100% - 16px) / 2);
+}
+    
+
+}
+
+
+/* DESKTOP*/
+
+
+@media (min-width: 1440px) {
+
+.benefits-pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+    
+.picture-benefit {
+    flex: 1;
+}
+
+   
+.benefits-right {
+    flex: 1;
+     margin-top: 0;
+    
+}
+
+.benefits {
+    padding: 112px 0;
+}
+
+       
+.list-for-benefits {
+         gap: 24px;
+           
+}
+    
+.list-for-benefits li {
+        width: calc((100% - 24px) / 2);
+}
+
+.zaglav {
+    font-size: 48px;
+}
+
+}
